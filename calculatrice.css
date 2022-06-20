@@ -1,0 +1,65 @@
+ 
+.app{
+  display:grid;
+  width: 300px;
+  margin: 0 auto;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 58px repeat(5, 70px);
+  grid-template-areas:  
+  "res res res res res"
+  "7 8 9 del c"
+  "4 5 6 times div"
+  "1 2 3 plus minus"
+  "0 bb exponential years years"
+  "equal equal equal equal dot";
+ 
+    border:18px solid rgb(66, 73, 73);
+    border-radius: 4px; 
+}
+
+
+
+
+#equal{
+  grid-area: equal;
+}
+
+
+
+h3{
+    text-align: right;
+    margin: 7px 10px 0 0;
+    font-size: 2rem;
+    grid-area: res;
+}
+button{
+    background: rgb(0, 0, 0);
+    color: white;
+    border: 1px solid white;
+    border-radius: 12px;
+    box-shadow: inset 0px -7px 10px 0px rgba(193, 246, 246, 0.7);
+  
+    cursor: pointer;
+    transition: 0,2s;       
+}
+
+button:hover{
+background-color: aqua;
+} 
+ 
+.couleur{
+background-color: red;
+ font-size: 30px;
+    }
+
+ .mousemove {
+        background-color: aqua;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        border-radius: 50px;
+        transition: 0s ease;
+        z-index: -10;  
+        
+      }
